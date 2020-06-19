@@ -1,0 +1,24 @@
+server:
+  port: 9999
+
+spring:
+  profiles:
+    active: local
+  application:
+    name: test-code-2020
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8
+    driverClassName: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+  redis:
+    database: 1
+    host: 127.0.0.1
+    port: 6379
+    timeout: 50000
+    password: 123456
+    pool:
+      maxActive: 8
+      maxIdle: 8
+      maxWait: 10000
+      minIdle: 0
